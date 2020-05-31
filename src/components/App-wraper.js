@@ -1,8 +1,10 @@
 import React from 'react';
 
-import Header from './Header';
-import Nav from './Nav';
-import Content from './Content';
+import Header from './jsx/Header.js';
+import Nav from './jsx/Nav';
+import Content from './jsx/Content';
+
+
 
 let  AppWrapper = () => {
   return (
@@ -11,7 +13,7 @@ let  AppWrapper = () => {
          <Header />
          <Nav />
         <Content />
-        </div>
+      </div>
 
 
   );

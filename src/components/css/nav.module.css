@@ -1,0 +1,10 @@
+.nav {
+  grid-area: navbar;
+  background-color: yellowgreen;
+}
+
+nav ul{
+  list-style-type: none;
+  color: white;
+  padding-left: 10px;
+}

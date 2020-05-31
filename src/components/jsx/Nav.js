@@ -1,7 +1,10 @@
 import React from 'react';
+
+import styles from './../css/nav.module.css'
+
 let Nav = () => {
   return(
-    <nav className = 'nav'>
+    <nav className = {styles.nav}>
           <ul>
             <li>Profile</li>
             <li>Messages</li>
