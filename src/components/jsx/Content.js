@@ -1,6 +1,7 @@
 import React from 'react';
 
-import styles from './../css/content.module.css'
+import Form from './Form.js';
+import styles from './../css/content.module.css';
 
 let Content = () =>{
   return(
@@ -19,6 +20,7 @@ let Content = () =>{
                 <div><strong>Phone: </strong> +(373) 69 12 34 56</div>
               </div>
             </div>
+            <Form />
           </div>
   );
 }
