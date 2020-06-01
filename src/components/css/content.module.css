@@ -2,7 +2,7 @@
 
 .content {
   grid-area: content;
-  background-color: #fff;
+  background-color: #f6f6f6;
 }
 
 .contentImage{
@@ -28,6 +28,7 @@
 
 .content__avatarImage{
   padding: 10px;
+  padding-left: 0px;
   width: 100px;
   height: 100px;
 }
