@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Form from './../Form/Form';
-import Post from '../Post/Post';
-import UserProfile from '../UserProfile/UserProfile';
+import Form from './Form/Form';
+import Post from './Post/Post';
+import UserProfile from './UserProfile/UserProfile';
 
-let Content = () =>{
+let Profile = () =>{
   return(
           <div >
             <UserProfile />
@@ -15,4 +15,5 @@ let Content = () =>{
           </div>
   );
 }
-export default Content;
+
+export default Profile;
