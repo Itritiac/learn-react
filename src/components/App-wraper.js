@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Header from './jsx/Header.js';
-import Nav from './jsx/Nav';
-import Content from './jsx/Content';
+import Header from './Header/Header';
+import Nav from './Nav/Nav';
+import Content from './Content/Profile/Content';
 
 
 

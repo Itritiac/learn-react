@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './../css/nav.module.css'
+import styles from './nav.module.css'
 
 let Nav = () => {
   return(

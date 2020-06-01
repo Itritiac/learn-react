@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Form from './Form.js';
-import styles from './../css/content.module.css';
+import Form from './../Form/Form';
+import styles from './content.module.css';
 
 let Content = () =>{
   return(

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './../css/form.module.css';
+import styles from './form.module.css';
 
 let Form = () => {
 	return(
