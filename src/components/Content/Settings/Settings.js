@@ -2,12 +2,12 @@ import React from 'react';
 
 
 
-let Dialogs = () =>{
+let Settings = () =>{
   return(
           <div >
-            This is Dialogs page
+            This is Settings page;
           </div>
   );
 }
 
-export default Dialogs;
+export default Settings;

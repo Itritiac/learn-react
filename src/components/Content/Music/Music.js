@@ -2,12 +2,12 @@ import React from 'react';
 
 
 
-let Dialogs = () =>{
+let Music = () =>{
   return(
           <div >
-            This is Dialogs page
+            This is music page
           </div>
   );
 }
 
-export default Dialogs;
+export default Music;

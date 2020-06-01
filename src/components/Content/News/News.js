@@ -2,12 +2,12 @@ import React from 'react';
 
 
 
-let Dialogs = () =>{
+let News = () =>{
   return(
           <div >
-            This is Dialogs page
+            This is News page;
           </div>
   );
 }
 
-export default Dialogs;
+export default News;
