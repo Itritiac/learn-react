@@ -21,8 +21,6 @@ const ChatItem = (props) =>{
 
     );
 }
-
-
 let Chates = (props) =>{
 
   let dataChat = [
@@ -31,17 +29,15 @@ let Chates = (props) =>{
     {id:3, name: 'Ion Moraru', status: 'Last seen error'}
   ]
 
+  let dataElements = dataChat
+  .map( dataChat => <ChatItem  name={dataChat.name} id={dataChat.id} status={dataChat.status}/>);
+
+
+
   return(
           <div className={styles.chates}>
-            <div >
-              <ChatItem  name={dataChat[0].name} id={dataChat[0].id} status={dataChat[0].status}/>
-              <ChatItem  name={dataChat[1].name} id={dataChat[1].id} status={dataChat[1].status} />
-              <ChatItem  name={dataChat[2].name} id={dataChat[2].id} status={dataChat[2].status} />
-            
-         
-
+            {dataElements}
           </div>
-        </div>
   );
 }
 

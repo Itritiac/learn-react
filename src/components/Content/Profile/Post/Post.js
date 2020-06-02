@@ -11,6 +11,7 @@ let Post = (props) =>{
       <div>
   <div><strong>{props.name}</strong></div>
         <div>{props.messsage}</div>
+        <div className={styles.likes}>{`Likes: ${props.likes}`}</div>
       </div>
     </div>
     </div>
