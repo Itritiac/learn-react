@@ -9,8 +9,14 @@ const ChatItem = (props) =>{
 
   return (
     <div>
-      <NavLink to={path} >{props.name}<br/>{props.status}</NavLink>
-      
+    <ul>
+    <li className={styles.name}>
+      <NavLink to={path} >{props.name}</NavLink>
+      </li>
+    <li className={styles.status}>
+      {props.status}
+    </li>
+    </ul>
     </div>
 
     );
@@ -18,44 +24,20 @@ const ChatItem = (props) =>{
 
 
 let Chates = (props) =>{
+
+  let dataChat = [
+    {id:1, name: 'Stas Rusnac', status: 'Last seen 5 minute ago'},
+    {id:2, name: 'Vadim Surugiu', status: 'Last seen 20 minute ago'},
+    {id:3, name: 'Ion Moraru', status: 'Last seen error'}
+  ]
+
   return(
           <div className={styles.chates}>
             <div >
-            <ul>
-              <li className={styles.name}>
-                <ChatItem  name="Maria Rosca" id="1"/>
-              </li>
-              <li className={styles.status}>
-                <ChatItem status="was online 5 minute ago" id="1"/>
-              </li>
-            </ul>
-
-             <ul>
-                <li className={styles.name}>
-                  <ChatItem  name="Stas Rusnac" id="2"/>
-                </li>
-                <li className={styles.status}>
-                  <ChatItem status="last seen 5 minute ago" id="2"/>
-                </li>
-              </ul>
-
-              <ul>
-                <li className={styles.name}>
-                  <ChatItem  name="Vadim Surugiu" id="3"/>
-                </li>
-                <li className={styles.status}>
-                  <ChatItem status="last seen 20 minute ago" id="3"/>
-                </li>
-              </ul>
-
-              <ul>
-                <li className={styles.name}>
-                  <ChatItem  name="Ion Moraru" id="4"/>
-                </li>
-                <li className={styles.status}>
-                  <ChatItem status="last seen error" id="4"/>
-                </li>
-              </ul>
+              <ChatItem  name={dataChat[0].name} id={dataChat[0].id} status={dataChat[0].status}/>
+              <ChatItem  name={dataChat[1].name} id={dataChat[1].id} status={dataChat[1].status} />
+              <ChatItem  name={dataChat[2].name} id={dataChat[2].id} status={dataChat[2].status} />
+            
          
 
           </div>
