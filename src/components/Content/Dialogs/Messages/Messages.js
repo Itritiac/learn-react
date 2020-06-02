@@ -2,14 +2,20 @@ import React from 'react';
 
 import styles from './message.module.css';
 
+const Message = (props) =>{
 
+	return(
+		<div>{props.name}<br/><br/>{props.message}</div>
+		)
 
-let Messages = () =>{
+}
+
+let Messages = (props) =>{
   return(
           <div className={styles.message}>
            
-            	<div>Stas Rusnac</div>
-            	<div>Hi. This is my message for you</div>
+            	<Message name="Sandu Rusnac" message="Hi. this message is awesome" />
+            	
             
           </div>
   );

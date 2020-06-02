@@ -6,7 +6,7 @@ import styles from './dialog.module.css';
 
 
 
-let Dialogs = () =>{
+let Dialogs = (props) =>{
   return(
           <div className={styles.dialogs}>
             <Chates/>
