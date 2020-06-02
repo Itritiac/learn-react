@@ -1,0 +1,18 @@
+.chates{
+	width: 30%;
+	border-right: 2px solid yellowgreen;
+
+}
+
+ul{
+	list-style-type: none;
+	padding-left: 20px;
+}
+
+.name{
+	font-weight: bold;
+}
+
+.dialogs{
+	font-size: 12px;
+}

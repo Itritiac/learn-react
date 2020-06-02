@@ -1,11 +1,16 @@
 import React from 'react';
+import Chates from './Chates/Chates';
+import Messages from './Messages/Messages';
+
+import styles from './dialog.module.css';
 
 
 
 let Dialogs = () =>{
   return(
-          <div >
-            This is Dialogs page
+          <div className={styles.dialogs}>
+            <Chates/>
+            <Messages/>
           </div>
   );
 }
