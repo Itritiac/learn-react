@@ -10,12 +10,10 @@ import MessageItem from './MessageItem/MessageItem';
 
 let Messages = (props) =>{
 
-			let messagesData = [
-				{id: 1, name: 'Sandu Rusnac', message: 'Hi. This message is awesome'}
-			]
 			
-			let messagesElements = messagesData.
-			map (messagesData =><MessageItem name={messagesData.name} message={messagesData.message} id={messagesData.id} />); 
+			
+			let messagesElements = 
+			props.messagesData.map (messagesData =><MessageItem name={messagesData.name} message={messagesData.message} id={messagesData.id} />); 
 
 			
 

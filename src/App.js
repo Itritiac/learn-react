@@ -7,8 +7,11 @@ import AppWrapper from './components/App-wraper';
 
 
 let  App = (props) => {
+
+
+
   return (
-    <AppWrapper />
+    <AppWrapper posts={props.posts} dataChat={props.dataChat} messagesData={props.messagesData}/>
   );
 }
 

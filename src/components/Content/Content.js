@@ -10,15 +10,19 @@ import Settings from './Settings/Settings.js';
 
 import styles from './content.module.css';
 
-let Content = () =>{
+
+
+let Content = (props) =>{
+
+	
   return(
           <div className={styles.content}>
           
-          	<Route path="/dialogs" component={Dialogs}/>
-          	<Route path="/profile" component={Profile}/>
-          	<Route path="/news" component={News}/>
-          	<Route path="/music" component={Music}/>
-          	<Route path="/settings" component={Settings}/>
+          	<Route path="/dialogs" render={ () => <Dialogs dataChat={props.dataChat} messagesData={props.messagesData}/>}/>
+          	<Route path="/profile" render={ () => <Profile posts={props.posts}/>}/>
+          	<Route path="/news" render={ () => <News/>}/>
+          	<Route path="/music" render={ () => <Music/>}/>
+          	<Route path="/settings" render={ () => <Settings/>}/>
           </div>
           
   );

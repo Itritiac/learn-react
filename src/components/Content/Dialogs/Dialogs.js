@@ -7,10 +7,11 @@ import styles from './dialog.module.css';
 
 
 let Dialogs = (props) =>{
+ 
   return(
           <div className={styles.dialogs}>
-            <Chates/>
-            <Messages/>
+            <Chates dataChat={props.dataChat}/>
+            <Messages messagesData={props.messagesData}/>
           </div>
   );
 }

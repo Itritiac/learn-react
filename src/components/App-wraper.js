@@ -7,13 +7,17 @@ import Content from './Content/Content.js';
 
 
 
-let  AppWrapper = () => {
+let  AppWrapper = (props) => {
+
+  
+
+
   return (
     <BrowserRouter>
       <div className = 'app-wrapper'>
          <Header />
          <Nav />
-       	<Content />
+       	<Content posts={props.posts} dataChat={props.dataChat} messagesData={props.messagesData}/>
       </div>
      </BrowserRouter>
 
