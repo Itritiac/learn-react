@@ -11,7 +11,7 @@ let  App = (props) => {
 
 
   return (
-    <AppWrapper posts={props.posts} dataChat={props.dataChat} messagesData={props.messagesData}/>
+    <AppWrapper posts={props.state.profiePage.posts} dataChat={props.state.chatPage.dataChat} messagesData={props.state.chatPage.messagesData}/>
   );
 }
 
