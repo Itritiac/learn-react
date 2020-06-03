@@ -1,19 +1,12 @@
 import React from 'react';
 
 import styles from './message.module.css';
+import MessageItem from './MessageItem/MessageItem';
 
 
 
 
-const Message = (props) =>{
 
-	return(
-		<div className={styles.message}>
-		{props.name}<br/><br/>{props.message}
-		</div>
-		);
-
-}
 
 let Messages = (props) =>{
 
@@ -22,7 +15,7 @@ let Messages = (props) =>{
 			]
 			
 			let messagesElements = messagesData.
-			map (messagesData =><Message name={messagesData.name} message={messagesData.message} id={messagesData.id} />); 
+			map (messagesData =><MessageItem name={messagesData.name} message={messagesData.message} id={messagesData.id} />); 
 
 			
 

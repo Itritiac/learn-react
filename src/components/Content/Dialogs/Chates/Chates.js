@@ -2,25 +2,9 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 
 import styles from './chates.module.css';
+import ChatItem from './ChatItem/ChatItem.js';
 
 
-const ChatItem = (props) =>{
-  let path = `/dialogs/${props.id}`;
-
-  return (
-    <div>
-    <ul>
-    <li className={styles.name}>
-      <NavLink to={path} >{props.name}</NavLink>
-      </li>
-    <li className={styles.status}>
-      {props.status}
-    </li>
-    </ul>
-    </div>
-
-    );
-}
 let Chates = (props) =>{
 
   let dataChat = [

@@ -6,7 +6,7 @@ import AppWrapper from './components/App-wraper';
 
 
 
-let  App = () => {
+let  App = (props) => {
   return (
     <AppWrapper />
   );
