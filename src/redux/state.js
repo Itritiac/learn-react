@@ -1,4 +1,6 @@
-import {renderEntireTree} from './../render'
+let renderEntireTree = () =>{
+  console.log('state changed');
+}
 
 let state = {
 
@@ -26,7 +28,7 @@ let state = {
 
   }
   window.state=state;
-  export let addPost = (postMessage) => {
+  export const addPost = (postMessage) => {
     let newPost = {
       id: 5,
       messsage: postMessage,
@@ -38,12 +40,18 @@ let state = {
 
   }
 
-  export let updateNewPostText = (NewText) => {
+  export const updateNewPostText = (NewText) => {
 
     state.profilePage.newPostText = NewText;
     renderEntireTree(state);
 
   }
+
+  export const subscribe = (observer) => {
+    
+    renderEntireTree = observer; // this is pattern 
+
+  } 
 
 
 
