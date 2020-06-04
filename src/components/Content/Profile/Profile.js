@@ -9,12 +9,15 @@ let Profile = (props) =>{
 
 
 	let postsElements =
-		props.posts.map( p => <Post messsage={p.messsage}  likes={p.likes}/>)
+    props.posts.map( p => <Post messsage={p.messsage}
+                                likes={p.likes}/>)
 
   return(
           <div >
             <UserProfile />
-            <Form />
+            <Form addPost={props.addPost}
+                  newPostText={props.newPostText}
+                  updateNewPostText={props.updateNewPostText} />
             <div><h2>Posts</h2></div>
             <div>{postsElements}</div>
           </div>

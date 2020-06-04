@@ -2,13 +2,19 @@ import React from 'react';
 
 import styles from './form.module.css';
 
-let Form = () => {
+let Form = (props) => {
 
 	let newPostElement = React.createRef();
 
 	let addPost = () =>{
 		let text = newPostElement.current.value;
-		alert (text);
+		props.addPost (text);
+		props.updateNewPostText('');
+	}
+
+	let onPostChange = () =>{
+		let text = newPostElement.current.value;
+		props.updateNewPostText();
 	}
 
 	return(
@@ -19,7 +25,7 @@ let Form = () => {
 					</div>
 
 					<div>
-						<textarea className={styles.FormText} rows="4" ref={newPostElement} cols="50" name="comment" form="usrform" placeholder="Your Post"></textarea>
+						<textarea onChange={onPostChange} className={styles.FormText} rows="4" ref={newPostElement} cols="50" name="comment" form={"usrform"} value={props.newPostText} placeholder="Your Post"/>
 					</div>
 					<button onClick={addPost} className={styles.formButton}>Send message</button>
 

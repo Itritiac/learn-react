@@ -17,12 +17,18 @@ let  AppWrapper = (props) => {
       <div className = 'app-wrapper'>
          <Header />
          <Nav />
-       	<Content posts={props.posts} dataChat={props.dataChat} messagesData={props.messagesData}/>
+         <Content posts={props.posts} 
+                  newPostText={props.newPostText}
+                  addPost={props.addPost} 
+                  updateNewPostText={props.updateNewPostText} 
+                  dataChat={props.dataChat} 
+                  messagesData={props.messagesData}/>
       </div>
      </BrowserRouter>
 
 
   );
+  
 }
 
 export default AppWrapper;

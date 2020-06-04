@@ -18,8 +18,12 @@ let Content = (props) =>{
   return(
           <div className={styles.content}>
           
-          	<Route path="/dialogs" render={ () => <Dialogs dataChat={props.dataChat} messagesData={props.messagesData}/>}/>
-          	<Route path="/profile" render={ () => <Profile posts={props.posts}/>}/>
+						<Route path="/dialogs" render={ () => <Dialogs dataChat={props.dataChat}
+																													 messagesData={props.messagesData}/>}/>
+						<Route path="/profile" render={ () => <Profile posts={props.posts} 
+																													 addPost={props.addPost}
+																													 updateNewPostText={props.updateNewPostText} 
+																													 newPostText={props.newPostText}/>}/>
           	<Route path="/news" render={ () => <News/>}/>
           	<Route path="/music" render={ () => <Music/>}/>
           	<Route path="/settings" render={ () => <Settings/>}/>
